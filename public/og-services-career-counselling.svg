@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)" />
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="180" font-size="48" font-weight="700">Career Counselling</text>
+    <text x="60" y="250" font-size="28" opacity="0.9">Personalised guidance to plan your study and career abroad.</text>
+  </g>
+</svg>
