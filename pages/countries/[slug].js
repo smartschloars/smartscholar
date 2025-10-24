@@ -4,7 +4,7 @@ import Hero from '../../components/Hero'
 import CountryContent from '../../components/CountryContent'
 
 const data = {
-  'australia': { title:'Study in Australia', banner:'/banners/australia.svg', content:(
+  'australia': { title:'Study in Australia', banner:'/banners/australia.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Australia</h3>
 
@@ -25,7 +25,7 @@ const data = {
       <p className="mt-4 text-gray-700">SmartScholar provides end-to-end support: personalised university shortlists, application assistance, scholarship searches, visa filing and pre-departure orientation to help you start your Australian journey confidently.</p>
     </>
   ) },
-  'uk': { title:'Study in United Kingdom', banner:'/banners/uk.svg', content:(
+  'uk': { title:'Study in United Kingdom', banner:'/banners/uk.png', content:(
     <>
       <h3 className="text-xl font-semibold">About UK</h3>
       <p className="mt-3 text-gray-700">The United Kingdom (UK) is one of the main economic hubs of Europe. It also holds the same reputation regarding quality education offered in its four state countries including Wales, Scotland, Britain and Northern Ireland. The UK is one of the most exciting places that an international student may choose to further their education qualifications.</p>
@@ -55,7 +55,7 @@ const data = {
       </ul>
     </>
   ) },
-  'usa': { title:'Study in United States', banner:'/banners/usa.svg', content:(
+  'usa': { title:'Study in United States', banner:'/banners/usa.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in the United States</h3>
 
@@ -74,7 +74,7 @@ const data = {
       </ul>
     </>
   ) },
-  'canada': { title:'Study in Canada', banner:'/banners/canada.svg', content:(
+  'canada': { title:'Study in Canada', banner:'/banners/canada.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Canada</h3>
 
@@ -93,7 +93,7 @@ const data = {
       </ul>
     </>
   ) },
-  'new-zealand': { title:'Study in New Zealand', banner:'/banners/new-zealand.svg', content:(
+  'new-zealand': { title:'Study in New Zealand', banner:'/banners/new-zealand.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in New Zealand</h3>
 
@@ -111,7 +111,7 @@ const data = {
       </ul>
     </>
   ) },
-  'ireland': { title:'Study in Ireland', banner:'/banners/ireland.svg', content:(
+  'ireland': { title:'Study in Ireland', banner:'/banners/ireland.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Ireland</h3>
 
@@ -127,7 +127,7 @@ const data = {
       </ul>
     </>
   ) },
-  'france': { title:'Study in France', banner:'/banners/france.svg', content:(
+  'france': { title:'Study in France', banner:'/banners/france.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in France</h3>
 
@@ -143,7 +143,7 @@ const data = {
       </ul>
     </>
   ) },
-  'germany': { title:'Study in Germany', banner:'/banners/germany.svg', content:(
+  'germany': { title:'Study in Germany', banner:'/banners/germany.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Germany</h3>
 
@@ -162,8 +162,8 @@ const data = {
       </ul>
     </>
   ) },
-  'mauritius': { title:'Study in Mauritius', banner:'/banners/mauritius.svg', content:'Mauritius offers affordable programs and international collaborations. We can help you explore options and apply.' },
-  'mauritius': { title:'Study in Mauritius', banner:'/banners/mauritius.svg', content:(
+  'mauritius': { title:'Study in Mauritius', banner:'/banners/mauritius.png', content:'Mauritius offers affordable programs and international collaborations. We can help you explore options and apply.' },
+  'mauritius': { title:'Study in Mauritius', banner:'/banners/mauritius.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Mauritius</h3>
 
@@ -177,7 +177,7 @@ const data = {
       </ul>
     </>
   ) },
-  'luxembourg': { title:'Study in Luxembourg', banner:'/banners/luxembourg.svg', content:(
+  'luxembourg': { title:'Study in Luxembourg', banner:'/banners/luxembourg.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Luxembourg</h3>
 
@@ -190,7 +190,7 @@ const data = {
       </ul>
     </>
   ) },
-  'cyprus': { title:'Study in Cyprus', banner:'/banners/cyprus.svg', content:(
+  'cyprus': { title:'Study in Cyprus', banner:'/banners/cyprus.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Cyprus</h3>
 
@@ -204,7 +204,7 @@ const data = {
       </ul>
     </>
   ) },
-  'netherlands': { title:'Study in Netherlands', banner:'/banners/netherlands.svg', content:(
+  'netherlands': { title:'Study in Netherlands', banner:'/banners/netherlands.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in the Netherlands</h3>
 
@@ -218,7 +218,7 @@ const data = {
       </ul>
     </>
   ) },
-  'finland': { title:'Study in Finland', banner:'/banners/finland.svg', content:(
+  'finland': { title:'Study in Finland', banner:'/banners/finland.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Finland</h3>
 
@@ -232,7 +232,7 @@ const data = {
       </ul>
     </>
   ) },
-  'poland': { title:'Study in Poland', banner:'/banners/poland.svg', content:(
+  'poland': { title:'Study in Poland', banner:'/banners/poland.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Poland</h3>
 
@@ -246,7 +246,7 @@ const data = {
       </ul>
     </>
   ) },
-  'sweden': { title:'Study in Sweden', banner:'/banners/sweden.svg', content:(
+  'sweden': { title:'Study in Sweden', banner:'/banners/sweden.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Sweden</h3>
 
@@ -260,7 +260,7 @@ const data = {
       </ul>
     </>
   ) },
-  'spain': { title:'Study in Spain', banner:'/banners/spain.svg', content:(
+  'spain': { title:'Study in Spain', banner:'/banners/spain.png', content:(
     <>
       <h3 className="text-xl font-semibold">Benefits of Studying in Spain</h3>
 
@@ -275,13 +275,13 @@ const data = {
       </ul>
     </>
   ) },
-  'malta': { title:'Study in Malta', banner:'/banners/malta.svg', content:'Malta offers international study options in a Mediterranean setting; we help with placements and travel.' },
-  'greece': { title:'Study in Greece', banner:'/banners/greece.svg', content:'Greece combines historic heritage with modern programs in select universities.' },
-  'italy': { title:'Study in Italy', banner:'/banners/italy.svg', content:'Italy offers strong programs in arts, design, humanities and business with rich cultural opportunities.' },
-  'latvia': { title:'Study in Latvia', banner:'/banners/latvia.svg', content:'Latvia hosts affordable programs with growing international collaborations.' },
-  'lithuania': { title:'Study in Lithuania', banner:'/banners/lithuania.svg', content:'Lithuania offers practical and research-oriented programs at competitive fees.' },
-  'czech-republic': { title:'Study in Czech Republic', banner:'/banners/czech-republic.svg', content:'The Czech Republic provides established universities with a broad range of masters programs.' },
-  'denmark': { title:'Study in Denmark', banner:'/banners/denmark.svg', content:'Denmark emphasizes innovation and practical research with many English-taught programs.' }
+  'malta': { title:'Study in Malta', banner:'/banners/malta.png', content:'Malta offers international study options in a Mediterranean setting; we help with placements and travel.' },
+  'greece': { title:'Study in Greece', banner:'/banners/greece.png', content:'Greece combines historic heritage with modern programs in select universities.' },
+  'italy': { title:'Study in Italy', banner:'/banners/italy.png', content:'Italy offers strong programs in arts, design, humanities and business with rich cultural opportunities.' },
+  'latvia': { title:'Study in Latvia', banner:'/banners/latvia.png', content:'Latvia hosts affordable programs with growing international collaborations.' },
+  'lithuania': { title:'Study in Lithuania', banner:'/banners/lithuania.png', content:'Lithuania offers practical and research-oriented programs at competitive fees.' },
+  'czech-republic': { title:'Study in Czech Republic', banner:'/banners/czech-republic.png', content:'The Czech Republic provides established universities with a broad range of masters programs.' },
+  'denmark': { title:'Study in Denmark', banner:'/banners/denmark.png', content:'Denmark emphasizes innovation and practical research with many English-taught programs.' }
 }
 
 export default function CountryPage(){
@@ -293,7 +293,7 @@ export default function CountryPage(){
   return (
     <>
       <SEO title={item.title} image={item.banner} />
-      <Hero title={item.title} subtitle="Explore programs, admissions and support" ctas={<a href="/contact" className="px-4 py-2 bg-brand-blue text-white rounded">Contact Us</a>} />
+      <Hero title={item.title} subtitle="Explore programs, admissions and support" backgroundImage={item.banner} ctas={<a href="/contact" className="px-4 py-2 bg-brand-blue text-white rounded hover:bg-blue-700 transition">Contact Us</a>} />
 
       <section className="container py-12">
         <div className="rounded overflow-hidden shadow">

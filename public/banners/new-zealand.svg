@@ -1,10 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#11998e"/>
-      <stop offset="1" stop-color="#38ef7d"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="360" fill="url(#g)" />
-  <text x="60" y="200" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#fff" font-weight="700">New Zealand</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 75">
+  <rect width="150" height="75" fill="#00008B"/>
+  <rect width="60" height="37.5" fill="#00008B"/>
+  <g id="uk-union">
+    <path d="M0,0 v37.5 h60 v-37.5 z" fill="#00008B" stroke="#FFF" stroke-width="1.5"/>
+    <path d="M0,0 L60,37.5 M60,0 L0,37.5" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,0 L60,37.5 M60,0 L0,37.5" stroke="#C8102E" stroke-width="0.6"/>
+    <path d="M30,0 v37.5 M0,18.75 h60" stroke="#FFF" stroke-width="1"/>
+    <path d="M30,0 v37.5 M0,18.75 h60" stroke="#C8102E" stroke-width="0.6"/>
+  </g>
+  <g id="southern-cross" fill="#FFF">
+    <circle cx="75" cy="15" r="2"/>
+    <circle cx="85" cy="22" r="2"/>
+    <circle cx="90" cy="37" r="2"/>
+    <circle cx="80" cy="48" r="2"/>
+    <circle cx="105" cy="32" r="2.5"/>
+  </g>
 </svg>

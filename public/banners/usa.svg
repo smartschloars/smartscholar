@@ -1,10 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#2193b0"/>
-      <stop offset="1" stop-color="#6dd5ed"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="360" fill="url(#g)" />
-  <text x="60" y="200" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#fff" font-weight="700">United States</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.5 4">
+  <clipPath id="s">
+    <path d="M0,0 v4 h7.5 v-4 z"/>
+  </clipPath>
+  <clipPath id="t">
+    <path d="M3.75,4 h3.75 v-4 h-3.75 z"/>
+  </clipPath>
+  <path d="M0,0 v4 h7.5 v-4 z" fill="#b22234"/>
+  <path d="M0,0.615 h7.5 m0,0.923 h7.5 m0,0.923 h7.5 m0,0.923 h7.5" stroke="#fff" stroke-width="0.231"/>
+  <path d="M0,0 v2.308 h3 v-2.308 z" fill="#3c3b6b"/>
+  <g fill="#fff" clip-path="url(#t)">
+    <g id="d">
+      <g id="c">
+        <g id="b">
+          <g id="a">
+            <circle cx="0.625" cy="0.554" r="0.057"/>
+            <circle cx="1.875" cy="0.554" r="0.057"/>
+            <circle cx="3.125" cy="0.554" r="0.057"/>
+          </g>
+          <use href="#a" y="0.923"/>
+          <use href="#a" y="1.846"/>
+        </g>
+        <use href="#b" x="0.625"/>
+      </g>
+      <use href="#c" x="1.25"/>
+    </g>
+    <use href="#d" y="2.308"/>
+  </g>
 </svg>
