@@ -15,7 +15,7 @@ const values = [
 const testimonials = [
   { quote: "SmartScholar made the whole process simple and stress-free. The team understood my goals and helped me every step of the way.", author: "A. Kumar", role: "University of UK" },
   { quote: "Excellent guidance and real results. I got into my dream university with a scholarship!", author: "S. Reddy", role: "Student, USA" },
-  { quote: "The personalized approach really sets them apart. Highly recommended!", author: "P. Singh", role: "Canada, Class of 2024" },
+  { quote: "The personalized approach really sets them apart. Highly recommended!", author: " P srinu", role: "uk, Class of 2024" },
 ]
 
 export default function About(){
@@ -56,7 +56,7 @@ export default function About(){
             className="space-y-4"
           >
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">500+</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">1500+</h3>
               <p className="text-gray-700">Students Successfully Placed</p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200">
