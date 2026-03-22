@@ -1,6 +1,6 @@
 # Smart Scholar
 
-Next.js site for Smart Scholar with server-side contact email handling via `pages/api/contact.js`.
+Next.js site for Smart Scholar.
 
 ## Local setup
 
@@ -10,57 +10,26 @@ Next.js site for Smart Scholar with server-side contact email handling via `page
 3. Start dev server:
    `npm run dev`
 
-## Vercel deployment
+## GitHub Pages deployment
 
-This project is now configured for normal Next.js deployment on Vercel, not GitHub Pages static export.
+This repo currently deploys to GitHub Pages through `.github/workflows/deploy.yml`.
 
-### Vercel dashboard
+The Pages workflow builds a static export by setting:
 
-1. Import the GitHub repository into Vercel.
-2. Framework preset:
-   `Next.js`
-3. Root directory:
-   repository root
-4. Build command:
-   `npm run build`
-5. Install command:
-   `npm ci`
+- `DEPLOY_TARGET=github-pages`
 
-### Environment variables
+That enables `output: 'export'` in `next.config.js` and deploys the generated `out/` folder.
 
-Add these in Vercel Project Settings -> Environment Variables:
+## Important limitation
 
-- `CONTACT_EMAIL`
-- `MAIL_FROM`
-- `MAIL_FROM_NAME`
-- `SMTP_HOST`
-- `SMTP_PORT`
-- `SMTP_SECURE`
-- `SMTP_USER`
-- `SMTP_PASSWORD`
+GitHub Pages is static hosting. Because of that, `pages/api/contact.js` will not run on the deployed Pages site.
 
-Apply them to:
+So:
 
-- `Production`
-- `Preview`
-- `Development` if you want `vercel env pull` / `vercel dev`
+- the site UI will deploy
+- the contact form backend will not work on GitHub Pages
 
-### Optional CLI flow
-
-1. Install Vercel CLI:
-   `npm i -g vercel`
-2. Link project:
-   `vercel link`
-3. Pull env vars locally:
-   `vercel env pull .env.local`
-4. Deploy preview:
-   `vercel`
-5. Deploy production:
-   `vercel --prod`
-
-## Remove GitHub Pages
-
-The GitHub Pages workflow has been removed from this repo. In GitHub, also unpublish the Pages site from the repository settings so Pages stops serving the old deployment.
+If you need the contact form in production, deploy later to Vercel or another host that supports Next.js server functions.
 
 ## Security
 
