@@ -7,10 +7,8 @@ import { motion } from 'framer-motion'
 const data = {
   'career-counselling': {
     title: 'Career Counselling',
-    banner: '/og-ielts.png',
     icon: FaBriefcase,
-    color: 'from-blue-500 to-blue-600',
-    content: `Career counselling helps individuals navigate their professional journey with clarity and confidence. Our advisors evaluate academic background, interests, and market trends to recommend study paths, skill development and realistic timelines for admission and career goals.`,
+    content: 'Career counselling helps you navigate your academic and professional journey with clarity. Our advisors evaluate academic background, interests, and market trends to recommend study paths, skill development, and realistic timelines for admission and career goals.',
     benefits: [
       'Personalized career assessment and guidance',
       'Market trends and job placement data analysis',
@@ -22,10 +20,8 @@ const data = {
   },
   'course-selection': {
     title: 'Course Selection',
-    banner: '/og-usa.png',
     icon: FaBook,
-    color: 'from-purple-500 to-purple-600',
-    content: `Course selection ensures students choose educational paths that align with their interests and career goals. We map courses to outcomes and advise on credit transfer, duration and cost.`,
+    content: 'Course selection ensures students choose educational paths that align with their interests and career goals. We map courses to outcomes and advise on credit transfer, duration, and cost.',
     benefits: [
       'Course comparison and outcome mapping',
       'Career alignment analysis',
@@ -37,10 +33,8 @@ const data = {
   },
   'university-selection': {
     title: 'University Selection',
-    banner: '/og-usa.png',
     icon: FaUniversity,
-    color: 'from-indigo-500 to-indigo-600',
-    content: `University selection involves choosing institutions that best fit an individual's academic aspirations and resources. We shortlist universities by fit, ranking, placement records and scholarship opportunities.`,
+    content: 'University selection involves choosing institutions that best fit an individual\'s aspirations and resources. We shortlist universities by fit, ranking, placement records, and scholarship opportunities.',
     benefits: [
       'Ranking and reputation analysis',
       'Placement and alumni network review',
@@ -52,10 +46,8 @@ const data = {
   },
   'scholarship-assistance': {
     title: 'Scholarship Assistance',
-    banner: '/og-ielts.png',
     icon: FaTrophy,
-    color: 'from-yellow-500 to-amber-600',
-    content: `Scholarship assistance guides students in identifying and applying for financial support to pursue their academic goals effectively. We help with eligibility checks, essay review and deadline management.`,
+    content: 'Scholarship assistance guides students in identifying and applying for financial support. We help with eligibility checks, essay review, and deadline management so you can maximize your chances.',
     benefits: [
       'Scholarship search and eligibility verification',
       'Application strategy development',
@@ -67,10 +59,8 @@ const data = {
   },
   'visa-assistance': {
     title: 'Visa Assistance',
-    banner: '/og-usa.png',
     icon: FaPassport,
-    color: 'from-green-500 to-emerald-600',
-    content: `Visa assistance facilitates the process of obtaining necessary documentation for international study or work opportunities. Our team reviews documents, prepares submissions and supports interview preparation.`,
+    content: 'Visa assistance simplifies the process of obtaining the right documentation for your study destination. Our team reviews documents, prepares submissions, and supports interview preparation.',
     benefits: [
       'Visa requirement analysis and checklist',
       'Document preparation and review',
@@ -82,10 +72,8 @@ const data = {
   },
   'pre-departure-guide': {
     title: 'Pre-departure Guide',
-    banner: '/og-usa.png',
     icon: FaPlane,
-    color: 'from-pink-500 to-rose-600',
-    content: `A pre-departure guide equips individuals with essential information to ease their transition into studying or working abroad. We cover travel, accommodation, cultural adaptation and checklists.`,
+    content: 'A pre-departure guide equips you with the essentials to ease your transition abroad. We cover travel, accommodation, cultural adaptation, and checklists so nothing is left to chance.',
     benefits: [
       'Travel and flight booking guidance',
       'Accommodation research and booking',
@@ -104,89 +92,93 @@ export default function ServiceDetail(){
   if(!item) return <div className="container py-12">Service not found.</div>
 
   const Icon = item.icon
-  const bannerPath = `/banners/${slug}.svg`
-  const imagePath = bannerPath
-  
+
   return (
     <>
-      <SEO title={item.title} image={imagePath} />
-      <Hero title={item.title} subtitle="SmartScholar - expert guidance at every step" ctas={<a href="/contact" className="px-4 py-2 bg-brand-blue text-white rounded">Contact Us</a>} />
+      <SEO title={item.title} />
+      <Hero
+        eyebrow="Service detail"
+        title={item.title}
+        subtitle="Designed as a guided sprint with checklists, templates, and a dedicated counsellor."
+        ctas={
+          <>
+            <a href="/contact" className="relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-white">
+              <span className="absolute inset-0 bg-gradient-to-r from-brand-blue via-indigo-500 to-purple-500" />
+              <span className="absolute inset-0 opacity-70 blur-lg bg-gradient-to-r from-brand-blue via-indigo-500 to-purple-500" />
+              <span className="relative flex items-center gap-2">
+                Book a call
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14m-4-4l4 4-4 4" />
+                </svg>
+              </span>
+            </a>
+            <a href="mailto:info@mysmartscholar.com" className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-800 shadow-sm hover:shadow-md">
+              Email us
+            </a>
+          </>
+        }
+      />
 
-      <section className="container py-16">
-        {/* Main service card */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
-        >
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            {/* Icon header with gradient */}
-            <div className={`bg-gradient-to-br ${item.color} p-12 flex items-center justify-center relative overflow-hidden`}>
-              <div className="absolute inset-0 opacity-10">
-                <div className="absolute -top-32 -right-32 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+      <section className="bg-gradient-to-b from-white via-[#f7f9ff] to-[#eef2ff] py-12 lg:py-16">
+        <div className="container grid lg:grid-cols-3 gap-8 items-start">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-2 rounded-3xl bg-white/90 backdrop-blur border border-white/70 shadow-[0_24px_90px_-45px_rgba(15,23,42,0.55)] p-6 md:p-10 space-y-6"
+          >
+            <div className="flex items-center gap-3">
+              <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-brand-blue to-indigo-500 text-white flex items-center justify-center text-2xl shadow-lg">
+                <Icon />
               </div>
-              <Icon className="text-white text-7xl relative z-10" />
-            </div>
-
-            {/* Content section */}
-            <div className="p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">{item.title}</h2>
-              
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                {item.content}
-              </p>
-
-              {/* Benefits section */}
-              <div className="mt-10 pt-8 border-t border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">What You Get</h3>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  {item.benefits.map((benefit, idx) => (
-                    <motion.div 
-                      key={idx}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, delay: idx * 0.1 }}
-                      viewport={{ once: true }}
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                    >
-                      <div className={`bg-gradient-to-br ${item.color} rounded-full p-2 mt-1 flex-shrink-0`}>
-                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-700 font-medium">{benefit}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-
-              {/* CTA section */}
-              <div className="mt-10 pt-8 border-t border-gray-200">
-                <p className="text-gray-700 mb-6">
-                  <span className="font-semibold">Ready to get started?</span> Contact us today to discuss how we can help you achieve your study abroad goals.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <a 
-                    href="/contact" 
-                    className="px-6 py-3 bg-brand-blue text-white rounded-lg font-semibold hover:shadow-lg transition-shadow text-center"
-                  >
-                    Book a Consultation
-                  </a>
-                  <a 
-                    href="mailto:info@mysmartscholar.com" 
-                    className="px-6 py-3 border-2 border-brand-blue text-brand-blue rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
-                  >
-                    Email Us
-                  </a>
-                </div>
-                <p className="mt-6 text-sm text-gray-600">
-                  Or reach out directly at <a href="tel:+919391572075" className="text-brand-blue font-semibold">+91 93915 72075</a>
-                </p>
+              <div>
+                <p className="text-sm font-semibold text-brand-blue">Included</p>
+                <h2 className="text-2xl font-bold text-gray-900">{item.title}</h2>
               </div>
             </div>
-          </div>
-        </motion.div>
+
+            <p className="text-lg text-gray-700 leading-relaxed">{item.content}</p>
+
+            <div className="grid sm:grid-cols-2 gap-3">
+              {item.benefits.map((benefit, idx) => (
+                <div key={benefit} className="flex items-start gap-3 rounded-2xl border border-gray-100 bg-gray-50 px-4 py-3">
+                  <span className="mt-1 h-2.5 w-2.5 rounded-full bg-brand-blue"></span>
+                  <span className="text-sm text-gray-800 leading-relaxed">{benefit}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="rounded-3xl bg-white/90 backdrop-blur border border-white/70 shadow-[0_24px_90px_-45px_rgba(15,23,42,0.55)] p-6 space-y-4"
+          >
+            <div className="flex items-center gap-3">
+              <span className="h-2.5 w-2.5 rounded-full bg-green-500 animate-pulse" />
+              <p className="text-sm font-semibold text-gray-800">We respond within 24 hours</p>
+            </div>
+            <div className="space-y-3 text-sm text-gray-700">
+              <p>Get a custom checklist for {item.title} with timelines, document templates, and rehearsal calls.</p>
+              <p>Parents are looped in with weekly updates and visa readiness scorecards.</p>
+            </div>
+            <div className="space-y-2 text-sm">
+              <a href="tel:+919391572075" className="block rounded-xl bg-brand-blue text-white px-4 py-2.5 font-semibold text-center shadow-lg hover:-translate-y-0.5 transition-transform">Call us directly</a>
+              <a href="https://wa.me/919391572075" className="block rounded-xl border border-brand-blue/40 text-brand-blue px-4 py-2.5 font-semibold text-center hover:bg-brand-blue/5 transition-colors">WhatsApp</a>
+            </div>
+            <div className="rounded-2xl border border-gray-100 bg-gray-50 px-4 py-3 text-sm text-gray-700">
+              <p className="font-semibold text-gray-900">What to bring to our first call</p>
+              <ul className="list-disc pl-5 mt-2 space-y-1">
+                <li>Academic history and target intake</li>
+                <li>Budget and scholarship expectations</li>
+                <li>Preferred countries or universities</li>
+              </ul>
+            </div>
+          </motion.div>
+        </div>
       </section>
     </>
   )
